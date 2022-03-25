@@ -7,7 +7,7 @@ dependencies:
   - hydra-core=1.1.1
   - omegaconf=2.1.1
   - scipy=1.8.0
-  - pip
+  - pip=22.0.4
   - pip:
     - -r requirements.txt
   
