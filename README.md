@@ -8,6 +8,8 @@ Clone this git repo and run the following to install the required (non-standard)
 
   - `pip install hydra-core --upgrade`  
   - `pip3 install numpy tqdm omegaconf scipy sklearn`
+  
+You can also use `conda env create -f environment.yaml` and `conda activate cls-ran`.
 
 ## Usage
 

@@ -1,0 +1,10 @@
+name: cls-ran
+
+dependencies:
+  - python >=3.8
+  - numpy=1.22.3
+  - tqdm=4.63.0
+  - hydra-core=1.1.1
+  - omegaconf=2.1.1
+  - scipy=1.8.0
+  - sklearn=1.0.2
