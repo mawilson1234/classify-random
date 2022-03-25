@@ -7,4 +7,7 @@ dependencies:
   - hydra-core=1.1.1
   - omegaconf=2.1.1
   - scipy=1.8.0
-  - sklearn=1.0.2
+  - pip
+  - pip:
+    - -r requirements.txt
+  
