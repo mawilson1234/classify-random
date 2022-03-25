@@ -1,6 +1,5 @@
 defaults:
   - _self_
-  - override hydra/job_logging: classify-random
   
 ntrials: 1000   # how many experiments to run
 ngroups: 2      # how many groups to create
