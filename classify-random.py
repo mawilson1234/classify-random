@@ -53,7 +53,9 @@ def run_trials(ntrials: int, ngroups: int, ntrain: int, ntest: int, ndims: int) 
 			ntest (int) 	: the number of random embeddings to generate per test set
 			ndims (int)		: the length of the random embeddings
 	'''
-	
+	log_filename = [handler for handler in log.root.handlers if isinstance(handler, logging.FileHandler)][0]
+	log_filename = log_filename.stream.name.replace(hydra.utils.get_original_cwd(), '')
+	log.info(f'Saving to "{log_filename}"')
 	log.info(f'Running {ntrials} trials with ngroups={ngroups}, ntrain={ntrain}, ntest={ntest}, ndims={ndims}')
 	
 	train_accuracies 	= []
