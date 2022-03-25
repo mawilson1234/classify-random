@@ -14,7 +14,7 @@ Clone this git repo and run the following to install the required (non-standard)
 From the terminal run:
   - `python3 classify-random.py ntrials=1000 ngroups=2 ntrain=1000 ntest=100 ndims=10`
   
-This will run 1000 trials where a linear SVM is fit on 1000 randomly initialized 10-dimensional vectors which are randomly assigned to two equal-size groups. The SVM will do its best to classify the random embeddings according to the random labels for the training data. Then, 100 randomly initialized 10-dimensional vectors will be generated as a test set. Mean accuracy and standard error are logged every 50 iterations for train and test performance separately.
+This will run 1000 trials where a linear SVM is fit on 1000 randomly initialized 10-dimensional vectors which are randomly assigned to two equal-size groups. The SVM will do its best to classify the random embeddings according to the random labels for the training data. Then, 100 randomly initialized 10-dimensional vectors will be generated as a test set. Mean accuracy and standard error are logged every 50 iterations for train and test performance separately. Logs will be printed to the console and saved in a file in `logs/` with the name `cls_ran-n1000-g2-train1000-test100-d10-{current_datetime}.log`
 
 You can adjust the settings above by filling in different values for the numbers after the `=`. Here's an explanation of what each option does.
 
