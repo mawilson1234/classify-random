@@ -56,7 +56,7 @@ def run_trials(ntrials: int, ngroups: int, ntrain: int, ntest: int, ndims: int) 
 	log_filename = [handler for handler in log.root.handlers if isinstance(handler, logging.FileHandler)][0]
 	log_filename = log_filename.stream.name.replace(hydra.utils.get_original_cwd(), '')
 	log.info(f'Saving to "{log_filename}"')
-	log.info(f'Running {ntrials} trials with ngroups={ngroups}, ntrain={ntrain}, ntest={ntest}, ndims={ndims}')
+	log.info(f'Running {ntrials} trials with ngroups={ngroups}, ndims={ndims}, ntrain={ntrain}, ntest={ntest}')
 	
 	train_accuracies 	= []
 	test_accuracies 	= []
