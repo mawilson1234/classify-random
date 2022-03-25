@@ -1,4 +1,5 @@
 - ntrials=1000
-- ndims=2
 - ngroups=2
-- nembeddings=5000
+- ntrain=10000
+- ntest=100
+- ndims=250

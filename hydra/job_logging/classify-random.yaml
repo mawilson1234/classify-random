@@ -13,7 +13,7 @@ handlers:
     class: logging.FileHandler
     formatter: simple
     encoding: 'utf-8'
-    filename: rand_emb-t${ntrials}-g${ngroups}-e${nembeddings}-d${ndims}-${now:%Y-%m-%d_%H-%M-%S}.log
+    filename: rand_emb-n${ntrials}-g${ngroups}-train${ntrain}-test${ntest}-d${ndims}-${now:%Y-%m-%d_%H-%M-%S}.log
 root:
   level: INFO
   handlers: [console, file]

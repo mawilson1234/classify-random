@@ -96,7 +96,7 @@ hydra:
         class: logging.FileHandler
         formatter: simple
         encoding: utf-8
-        filename: rand_emb-t${ntrials}-g${ngroups}-e${nembeddings}-d${ndims}-${now:%Y-%m-%d_%H-%M-%S}.log
+        filename: rand_emb-n${ntrials}-g${ngroups}-train${ntrain}-test${ntest}-d${ndims}-${now:%Y-%m-%d_%H-%M-%S}.log
     root:
       level: INFO
       handlers:
@@ -111,12 +111,13 @@ hydra:
     hydra: []
     task:
     - ntrials=1000
-    - ndims=2
     - ngroups=2
-    - nembeddings=5000
+    - ntrain=10000
+    - ntest=100
+    - ndims=250
   job:
     name: classify-random
-    override_dirname: ndims=2,nembeddings=5000,ngroups=2,ntrials=1000
+    override_dirname: ndims=250,ngroups=2,ntest=100,ntrain=10000,ntrials=1000
     id: ???
     num: ???
     config_name: classify-random
