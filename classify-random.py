@@ -42,7 +42,7 @@ def create_randomly_grouped_embeddings(ngroups: int, nembeddings: int, ndims: in
 	
 	return embeddings, labels
 
-def run_trials(ntrials: int, ngroups: int, ntrain: int, ntest: int, ndims: int) -> None:
+def run_trials(ntrials: int, ntrain: int, ntest: int, ndims: int, ngroups: int) -> None:
 	'''
 	Generates random embeddings and fits a classifier. Logs average accuracy.
 	
@@ -118,7 +118,7 @@ def get_accuracy(classifier: svm.SVC, inputs: np.ndarray, labels: List[int]) -> 
 @hydra.main(config_path='.', config_name='classify-random')
 def main(cfg: DictConfig) -> None:
 	'''Runs trials according to the config file/command line config'''
-	run_trials(cfg.ntrials, cfg.ngroups, cfg.ntrain, cfg.ntest, cfg.ndims)
+	run_trials(cfg.ntrials, cfg.ntrain, cfg.ntest, cfg.ngroups, cfg.ndims)
 
 
 if __name__ == '__main__':
