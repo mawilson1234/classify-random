@@ -1,0 +1,4 @@
+ntrials: 1000
+ngroups: 2
+nembeddings: 5000
+ndims: 2

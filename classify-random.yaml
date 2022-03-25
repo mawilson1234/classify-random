@@ -1,0 +1,15 @@
+defaults:
+  - _self_
+  - override hydra/job_logging: classify-random
+  
+ntrials: 1000 # how many experiments to run
+ngroups: 2 # how many groups to create
+nembeddings: 100000 # how many random embeddings to generato
+ndims: 768 # length of the random embeddings
+
+hydra:
+  run: 
+    dir: ./logs/
+  sweep:
+    dir: ./
+    subdir: logs/
