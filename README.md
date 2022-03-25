@@ -7,7 +7,7 @@ Examines the performance of linear support vector machines (SVMs) on classifying
 Clone this git repo and run the following to install the required (non-standard) dependencies:
 
   - `pip install hydra-core --upgrade`  
-  - `pip3 install numpy tqdm omegaconf scipy scikit-learn`
+  - `pip install numpy tqdm omegaconf scipy scikit-learn`
   
 You can also use `conda env create -f environment.yaml` and `conda activate cls-ran`.
 
