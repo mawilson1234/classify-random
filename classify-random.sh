@@ -13,6 +13,6 @@ source activate cls-ran
 python classify-random.py -m \
 	ntrials=1000 \
 	ngroups=2,3,4 \
-	ntrain=100000 \
-	ntest=5000 \
+	ntrain=10000 \
+	ntest=500 \
 	ndims=10,100,768

@@ -1,2 +1,3 @@
 # don't include outputs
 logs/*
+multirun.yaml
