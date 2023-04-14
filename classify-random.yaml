@@ -3,7 +3,7 @@ defaults:
   
 ntrials: 1000   # how many experiments to run
 ngroups: 2      # how many groups to create
-ntrain: 100000  # how many random embeddings to generate in each training set
+ntrain: 1e-5
 ntest: 1000     # how many random embeddings to generate in each test set
 ndims: 768      # length of the random embeddings
 

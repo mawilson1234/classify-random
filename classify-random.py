@@ -117,6 +117,7 @@ def get_accuracy(classifier: svm.SVC, inputs: np.ndarray, labels: List[int]) -> 
 
 @hydra.main(config_path='.', config_name='classify-random')
 def main(cfg: DictConfig) -> None:
+	breakpoint()
 	'''Runs trials according to the config file/command line config'''
 	run_trials(cfg.ntrials, cfg.ntrain, cfg.ntest, cfg.ngroups, cfg.ndims)
 
